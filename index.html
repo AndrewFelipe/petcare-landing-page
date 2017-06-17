@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>PetCare</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            html, body { 
+                margin: 0;
+                padding: 0;
+            }
+
+            html, body, .section {
+                height: 100%
+            }
+
+            body {
+                font-size: 16px;
+                font-family: 'Open Sans', sans-serif;
+                padding-top: 130px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 3em;
+                margin: 0;
+                margin-bottom: 20px;
+                color: #fff;
+            }
+
+            p {
+                color: #fff;
+                font-size: 1.2em;
+                margin: 0;
+            }
+
+            .form-control,
+            .btn {
+                border-radius: 20px;
+            }
+
+            .form-control.input-email {
+                height: 42px;
+                margin-right: 10px;
+            }
+
+            .btn.btn-primary {
+                padding: 10px 20px;
+            }
+
+            .btn {
+                border: 0;
+                font-size: 1em;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .btn.btn-primary {
+                color: #fff;
+                background: #2196F3;
+            }
+
+            .form-control,
+            .form-control:focus,
+            .form-control:active {
+                outline: none;
+                box-shadow: none;
+            }
+
+            .top-bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px 100px;
+                padding-top: 50px;
+            }
+
+            .top-bar img {
+                width: 70px;
+            }
+
+            .section {
+                padding: 50px 100px;
+                color: #fff;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            .section > .inner {
+                position: relative;
+                height: 100%;
+            }
+
+            .section > .inner > .content {
+                position: absolute;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 70%;
+            }
+
+            .section.home:before,
+            .section.home:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: " ";
+            }
+
+            .section.home:before {
+                z-index: -2;
+                background: url(photos/bg-1.jpg);
+                background-size: cover;
+            }
+
+            .section.home:after {
+                z-index: -1;
+                opacity: 0.7;
+            }
+
+            .section.home {
+                text-align: left;
+                color: #333;
+            }
+
+            .form-email {
+                padding-top: 50px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!--<div class="top-bar">
+            <div class="logo">
+                <img src="photos/logo.png" />
+            </div>
+        </div>-->
+        <div class="section home">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Encontre alguém que<br/> ame seu pet como você</h2>
+                    <p>Precisa sair mais não quer deixar seu pet sozinho?<br/> A PetCare encontra a pessoa ideal para cuidar <br/>do seu melhor amigo</p>
+                    <div class="form-email form-inline">
+                        <input type="email" placeholder="E-mail" class="form-control input-email" style="width: 350px;" />
+                        <button type="button" class="btn btn-primary">Estou interessado!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
